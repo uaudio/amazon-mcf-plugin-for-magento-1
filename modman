@@ -1,0 +1,8 @@
+app/etc/modules/Amazon_MCF.xml                                      app/etc/modules/Amazon_MCF.xml
+app/code/community/Amazon                                           app/code/community/Amazon
+app/design/adminhtml/default/default/layout/amazon_mcf.xml          app/design/adminhtml/default/default/layout/amazon_mcf.xml
+app/design/frontend/base/default/layout/amazon/mcf.xml              app/design/frontend/base/default/layout/amazon/mcf.xml
+app/design/frontend/base/default/template/amazon/catalog/product_delivery.phtml         app/design/frontend/base/default/template/amazon/catalog/product_delivery.phtml
+app/design/adminhtml/default/default/template/amazon                app/design/adminhtml/default/default/template/amazon
+lib/Amazon/*                                                        lib/Amazon/
+skin/frontend/base/default/css/amazon/mcf.css                       skin/frontend/base/default/css/amazon/mcf.css
