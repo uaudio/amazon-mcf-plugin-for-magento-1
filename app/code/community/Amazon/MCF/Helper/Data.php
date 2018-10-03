@@ -531,12 +531,12 @@ class Amazon_MCF_Helper_Data extends Mage_Core_Helper_Abstract
      * Log errors
      *
      * @param $method
-     * @param FBAOutboundServiceMWS_Exception $e
+     * @param $e
      * @param null                            $store
      */
     public function logApiError(
         $method,
-        \FBAOutboundServiceMWS_Exception $e,
+        $e,
         $store = null
     ) {
         if ($this->getLogApi($store)) {
