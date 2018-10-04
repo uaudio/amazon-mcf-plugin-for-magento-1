@@ -53,7 +53,7 @@ $installer->addAttribute(
 
 $installer->addAttribute(
     'order',
-    'amazon_order_submission_attempt_count',
+    'amazon_order_submission_count',
     $submissionAttemptAttr
 );
 

@@ -211,7 +211,7 @@ class Amazon_MCF_Model_Cron_Orders
                 'Retrying submission of order #' . $order->getIncrementId()
             );
 
-            $currentAttempt = $order->getAmazonOrderSubmissionAttemptCount() + 1;
+            $currentAttempt = $order->getAmazonOrderSubmissionCount() + 1;
             /**
              * @var \FBAOutboundServiceMWS_Model_CreateFulfillmentOrderResponse $result
              */
@@ -231,7 +231,7 @@ class Amazon_MCF_Model_Cron_Orders
                     . "after $currentAttempt tries."
                 );
             } else {
-                $order->setAmazonOrderSubmissionAttemptCount($currentAttempt);
+                $order->setAmazonOrderSubmissionCount($currentAttempt);
             }
 
             $order->save();

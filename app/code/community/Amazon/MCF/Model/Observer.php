@@ -58,7 +58,7 @@ class Amazon_MCF_Model_Observer
             $order->setAmazonOrderStatus(
                 Amazon_MCF_Helper_Data::ORDER_STATUS_ATTEMPTED
             );
-            $order->setAmazonOrderSubmissionAttemptCount(1);
+            $order->setAmazonOrderSubmissionCount(1);
         }
     }
 
