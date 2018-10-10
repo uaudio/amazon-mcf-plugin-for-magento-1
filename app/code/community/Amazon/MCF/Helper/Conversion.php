@@ -184,9 +184,8 @@ class Amazon_MCF_Helper_Conversion extends Mage_Core_Helper_Abstract
      */
     public function getIso8601Timestamp($timestamp)
     {
-        $timestamp = strtotime($timestamp);
-        $converted = date(self::ISO8601_FORMAT, $timestamp);
-        return $converted;
+        $datetime = new DateTime($timestamp);
+        return $datetime->format(DateTime::ISO8601);    
     }
 
     /**
