@@ -389,7 +389,7 @@ class Amazon_MCF_Model_Cron_Orders
      * @return array
      */
     protected function getPackagesFromFulfillmentOrder(
-        \FBAOutboundServiceMWS_Model_FulfillmentOrder $order
+        \FBAOutboundServiceMWS_Model_GetFulfillmentOrderResult $order
     ) {
         /**
          * @var FBAOutboundServiceMWS_Model_FulfillmentShipmentList $shipments
