@@ -228,7 +228,7 @@ class Amazon_MCF_Model_Cron_Orders
                 );
                 $helper->logOrder(
                     'Giving up on order #' . $order->getIncrementId()
-                    . "after $currentAttempt tries."
+                    . " after $currentAttempt tries."
                 );
             } else {
                 $order->setAmazonOrderSubmissionCount($currentAttempt);
