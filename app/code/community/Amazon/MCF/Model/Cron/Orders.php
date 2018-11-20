@@ -216,7 +216,7 @@ class Amazon_MCF_Model_Cron_Orders
              * @var \FBAOutboundServiceMWS_Model_CreateFulfillmentOrderResponse $result
              */
             $result = $service->createFulfillmentOrder($order);
-            $responseMetadata = $result->getResponseMetadata();
+            if (!empty($result)) $responseMetadata = $result->getResponseMetadata();
 
             if (!empty($result) && !empty($responseMetadata)) {
                 $order->setAmazonOrderStatus(
