@@ -147,7 +147,7 @@ class Amazon_MCF_Helper_Conversion extends Mage_Core_Helper_Abstract
                 $qty = $item->getQty() ? $item->getQty() : $item->getQtyOrdered();
                 $amazonItems[] = $this->getAmazonItem(
                     $product,
-                    $qty,
+                    round($qty),
                     $item->getItemId()
                 );
             }
