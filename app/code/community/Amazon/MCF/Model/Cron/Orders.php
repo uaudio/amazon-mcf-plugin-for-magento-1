@@ -315,9 +315,9 @@ class Amazon_MCF_Model_Cron_Orders
                                 $conversionHelper->getCarrierTitleFromPackage(
                                     $package
                                 ),
+                            'trackNumber' => $package->getTrackingNumber(),
                         );
                     }
-
                 }
 
                 // match order items with each shipment/package
@@ -359,7 +359,7 @@ class Amazon_MCF_Model_Cron_Orders
                             $track->setCarrierCode(
                                 $shipments[$packageNumber]['tracking']['carrierCode']
                             );
-                            $track->setTrackNumber($packageNumber);
+                            $track->setTrackNumber($shipments[$packageNumber]['tracking']['trackNumber']);
                             $track->setTitle(
                                 $shipments[$packageNumber]['tracking']['title']
                             );
